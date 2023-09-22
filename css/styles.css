@@ -28,7 +28,7 @@ body {
   font-family: 'Roboto', sans-serif;
 
   line-height: 1.5;
-  letter-spacing: 0.32px;
+  letter-spacing: 0.02em;
 }
 
 h1,
@@ -57,7 +57,7 @@ a {
   font-family: inherit;
 
   line-height: 1.5;
-  letter-spacing: 0.64px;
+  letter-spacing: 0.04em;
 }
 
 .list {
@@ -73,7 +73,7 @@ a {
   font-weight: 700;
 
   line-height: 1.11;
-  letter-spacing: 0.72px;
+  letter-spacing: 0.04em;
 }
 
 /* Header */
@@ -84,7 +84,7 @@ a {
   color: var(--secondary-text-color);
 }
 .main-nav .logo,
-footer .logo {
+.page-footer .logo {
   text-transform: uppercase;
 
   font-size: 18px;
@@ -92,7 +92,7 @@ footer .logo {
   font-family: Raleway, sans-serif;
 
   line-height: 1.17;
-  letter-spacing: 0.54px;
+  letter-spacing: 0.03em;
 }
 .main-nav-menu-link {
   color: var(--secondary-text-color);
@@ -147,7 +147,7 @@ footer .logo {
   font-size: 56px;
 
   line-height: 1.07;
-  letter-spacing: 1.12px;
+  letter-spacing: 0.02em;
 }
 .section-hero .hero-btn {
   cursor: pointer;
@@ -167,7 +167,7 @@ footer .logo {
   font-size: 20px;
 
   line-height: 1.2;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.02em;
 }
 .section-content .feature-description {
   font-weight: 400;
@@ -187,7 +187,7 @@ footer .logo {
   font-weight: 500;
 
   line-height: 1.2;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.02em;
 }
 .section-team .member-role {
   color: var(--primary-text-color);
