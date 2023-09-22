@@ -1,0 +1,211 @@
+:root {
+  /* SLATE */
+  --primary-text-color: #434455;
+  /* NAVY BLUE */
+  --secondary-text-color: #2e2f42;
+
+  /* IRIS  */
+  --btn-accent-color: #4d5ae5;
+  /* OCEAN */
+  --btn-active-color: #404bbf;
+  /* CLOUD */
+  --btn-defaul-color: #f4f4fd;
+
+  /* Main background color */
+  --bg-color: #ffffff;
+}
+
+/* Base Template settings */
+body {
+  color: var(--primary-text-color);
+
+  font-size: 16px;
+  font-style: normal;
+  font-family: Roboto, sans-serif;
+
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--secondary-text-color);
+}
+
+a {
+  font-family: inherit;
+}
+
+.btn {
+  color: var(--bg-color);
+  text-align: center;
+
+  font-weight: 500;
+  font-size: 16px;
+  font-family: inherit;
+
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+}
+
+/* Section */
+.section-header {
+  text-align: center;
+  text-transform: capitalize;
+
+  font-size: 36px;
+  font-weight: 700;
+
+  line-height: 1.1;
+  letter-spacing: 0.72px;
+}
+
+/* Header */
+.logo span {
+  color: var(--btn-accent-color);
+}
+.main-nav .logo,
+footer .logo {
+  color: var(--secondary-text-color);
+  text-transform: uppercase;
+  text-decoration: none;
+
+  font-size: 18px;
+  font-weight: 800;
+  font-family: Raleway, sans-serif;
+
+  line-height: 1.2;
+  letter-spacing: 0.54px;
+}
+.main-nav-menu .link {
+  color: var(--secondary-text-color);
+  text-decoration: none;
+  text-transform: capitalize;
+
+  font-weight: 500;
+}
+.main-nav .main-nav-menu,
+.contact-info .contact-info-menu,
+.section-features .section-content,
+.section-services .section-content,
+.section-team .section-content,
+.portfolio-filters,
+.portfolio-data {
+  list-style-type: none;
+}
+.contact-info-menu .link {
+  color: var(--primary-text-color);
+  text-decoration: none;
+
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Footer */
+footer {
+  background-color: var(--secondary-text-color);
+}
+footer,
+footer .logo {
+  color: var(--bg-color);
+}
+footer .footer-description {
+  font-weight: 400;
+}
+
+/* HOME PAGE */
+
+/* Hero */
+.section-hero {
+  text-align: center;
+  background-color: var(--secondary-text-color);
+}
+.section-hero .section-header {
+  color: var(--bg-color);
+
+  font-weight: 700;
+  font-size: 56px;
+
+  line-height: 1.1;
+  letter-spacing: 1.12px;
+}
+.section-hero .hero-btn {
+  background-color: var(--btn-accent-color);
+}
+.section-hero .hero-btn:hover {
+  cursor: pointer;
+}
+
+/* Features */
+.section-content .feature-block {
+  text-align: left;
+}
+.section-content .feature-title {
+  font-weight: 500;
+  font-size: 20px;
+
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+}
+.section-content .feature-description {
+  font-weight: 400;
+}
+
+/* Our Services */
+
+/* Our Team */
+.section-team .member-card {
+  text-align: center;
+}
+.section-team .member-name {
+  font-size: 20px;
+  font-weight: 500;
+
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+}
+.section-team .member-role {
+  color: var(--primary-text-color);
+  font-weight: 400;
+}
+
+/* PORTFOLIO PAGE */
+.portfolio-filters-wrap {
+  text-align: center;
+}
+.btn-portfolio-filter {
+  color: var(--btn-accent-color);
+  text-align: center;
+  text-decoration: none;
+
+  font-weight: 500;
+
+  background-color: var(--btn-defaul-color);
+  letter-spacing: 0.64px;
+}
+.btn-portfolio-filter.active,
+.btn-portfolio-filter:hover,
+.btn-portfolio-filter:focus {
+  color: var(--bg-color);
+  background-color: var(--btn-active-color);
+}
+.portfolio-project {
+  text-decoration: none;
+}
+.portfolio-project-title {
+  text-align: left;
+
+  font-size: 20px;
+  font-weight: 500;
+
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+}
+.portfolio-project-description {
+  color: var(--primary-text-color);
+  font-weight: 400;
+}
