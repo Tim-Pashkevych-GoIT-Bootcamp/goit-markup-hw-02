@@ -8,11 +8,13 @@
   --btn-accent-color: #4d5ae5;
   /* OCEAN */
   --btn-active-color: #404bbf;
-  /* CLOUD */
-  --btn-defaul-color: #f4f4fd;
 
-  /* Main background color */
-  --bg-color: #ffffff;
+  /* Main background color: WHITE */
+  --primary-bg-color: #ffffff;
+  /* Secondary background color: CLOUD */
+  --secondary-bg-color: #f4f4fd;
+  /* Image background color: CORNFLOWER */
+  --img-bg-color: #e7e9fc;
 }
 
 /* Base Template settings */
@@ -41,7 +43,7 @@ a {
 }
 
 .btn {
-  color: var(--bg-color);
+  color: var(--primary-bg-color);
   text-align: center;
 
   font-weight: 500;
@@ -111,7 +113,7 @@ footer {
 }
 footer,
 footer .logo {
-  color: var(--bg-color);
+  color: var(--primary-bg-color);
 }
 footer .footer-description {
   font-weight: 400;
@@ -125,7 +127,7 @@ footer .footer-description {
   background-color: var(--secondary-text-color);
 }
 .section-hero .section-header {
-  color: var(--bg-color);
+  color: var(--primary-bg-color);
 
   font-weight: 700;
   font-size: 56px;
@@ -158,6 +160,9 @@ footer .footer-description {
 /* Our Services */
 
 /* Our Team */
+.section-team {
+  background-color: var(--secondary-bg-color);
+}
 .section-team .member-card {
   text-align: center;
 }
@@ -184,13 +189,13 @@ footer .footer-description {
 
   font-weight: 500;
 
-  background-color: var(--btn-defaul-color);
+  background-color: var(--secondary-bg-color);
   letter-spacing: 0.64px;
 }
 .btn-portfolio-filter.active,
 .btn-portfolio-filter:hover,
 .btn-portfolio-filter:focus {
-  color: var(--bg-color);
+  color: var(--primary-bg-color);
   background-color: var(--btn-active-color);
 }
 .portfolio-project {
