@@ -21,9 +21,11 @@
 body {
   color: var(--primary-text-color);
 
+  background-color: var(--primary-bg-color);
+
   font-size: 16px;
   font-style: normal;
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
 
   line-height: 1.5;
   letter-spacing: 0.32px;
@@ -42,6 +44,10 @@ a {
   font-family: inherit;
 }
 
+.link {
+  text-decoration: none;
+}
+
 .btn {
   color: var(--primary-bg-color);
   text-align: center;
@@ -54,6 +60,10 @@ a {
   letter-spacing: 0.64px;
 }
 
+.list {
+  list-style: none;
+}
+
 /* Section */
 .section-header {
   text-align: center;
@@ -62,60 +72,64 @@ a {
   font-size: 36px;
   font-weight: 700;
 
-  line-height: 1.1;
+  line-height: 1.11;
   letter-spacing: 0.72px;
 }
 
 /* Header */
-.logo span {
+.page-header .logo {
   color: var(--btn-accent-color);
+}
+.page-header .logo span {
+  color: var(--secondary-text-color);
 }
 .main-nav .logo,
 footer .logo {
-  color: var(--secondary-text-color);
   text-transform: uppercase;
-  text-decoration: none;
 
   font-size: 18px;
   font-weight: 800;
   font-family: Raleway, sans-serif;
 
-  line-height: 1.2;
+  line-height: 1.17;
   letter-spacing: 0.54px;
 }
-.main-nav-menu .link {
+.main-nav-menu-link {
   color: var(--secondary-text-color);
-  text-decoration: none;
   text-transform: capitalize;
 
   font-weight: 500;
-}
-.main-nav .main-nav-menu,
-.contact-info .contact-info-menu,
-.section-features .section-content,
-.section-services .section-content,
-.section-team .section-content,
-.portfolio-filters,
-.portfolio-data {
-  list-style-type: none;
-}
-.contact-info-menu .link {
-  color: var(--primary-text-color);
-  text-decoration: none;
+  font-size: 16px;
 
-  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.contact-info {
   font-style: normal;
+}
+.contact-info-menu-link {
+  color: var(--primary-text-color);
+  font-weight: 400;
+}
+.main-nav .link:hover,
+.main-nav .link:focus,
+.contact-info .link:hover,
+.contact-info .link:focus {
+  color: var(--btn-active-color);
 }
 
 /* Footer */
-footer {
+.page-footer {
   background-color: var(--secondary-text-color);
 }
-footer,
-footer .logo {
-  color: var(--primary-bg-color);
+.page-footer .logo {
+  color: var(--btn-accent-color);
 }
-footer .footer-description {
+.page-footer .logo-second-part {
+  color: var(--secondary-bg-color);
+}
+.page-footer .footer-description {
+  color: var(--secondary-bg-color);
   font-weight: 400;
 }
 
@@ -132,14 +146,16 @@ footer .footer-description {
   font-weight: 700;
   font-size: 56px;
 
-  line-height: 1.1;
+  line-height: 1.07;
   letter-spacing: 1.12px;
 }
 .section-hero .hero-btn {
+  cursor: pointer;
   background-color: var(--btn-accent-color);
 }
-.section-hero .hero-btn:hover {
-  cursor: pointer;
+.section-hero .hero-btn:hover,
+.section-hero .hero-btn:focus {
+  background-color: var(--btn-active-color);
 }
 
 /* Features */
@@ -158,13 +174,13 @@ footer .footer-description {
 }
 
 /* Our Services */
-
 /* Our Team */
 .section-team {
   background-color: var(--secondary-bg-color);
 }
 .section-team .member-card {
   text-align: center;
+  background-color: var(--primary-bg-color);
 }
 .section-team .member-name {
   font-size: 20px;
@@ -179,18 +195,19 @@ footer .footer-description {
 }
 
 /* PORTFOLIO PAGE */
-.portfolio-filters-wrap {
-  text-align: center;
-}
 .btn-portfolio-filter {
   color: var(--btn-accent-color);
   text-align: center;
   text-decoration: none;
 
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
+  font-size: 16px;
 
+  cursor: pointer;
   background-color: var(--secondary-bg-color);
-  letter-spacing: 0.64px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
 }
 .btn-portfolio-filter.active,
 .btn-portfolio-filter:hover,
@@ -202,15 +219,21 @@ footer .footer-description {
   text-decoration: none;
 }
 .portfolio-project-title {
+  color: var(--secondary-text-color);
   text-align: left;
 
   font-size: 20px;
   font-weight: 500;
 
   line-height: 1.2;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.02em;
 }
 .portfolio-project-description {
   color: var(--primary-text-color);
+
+  font-size: 16px;
   font-weight: 400;
+
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
