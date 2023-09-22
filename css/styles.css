@@ -209,7 +209,6 @@ footer .logo {
   line-height: 1.5;
   letter-spacing: 0.04em;
 }
-.btn-portfolio-filter.active,
 .btn-portfolio-filter:hover,
 .btn-portfolio-filter:focus {
   color: var(--primary-bg-color);
