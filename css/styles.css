@@ -80,7 +80,7 @@ a {
 .page-header .logo {
   color: var(--btn-accent-color);
 }
-.page-header .logo span {
+.page-header .logo-second-part {
   color: var(--secondary-text-color);
 }
 .main-nav .logo,
